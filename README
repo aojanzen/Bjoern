@@ -1,3 +1,21 @@
 README
 
-Still need to add content.
+Bjoern.py
+
+Dr. Andreas Janzen, 2020-10-12
+janzen@gmx.net
+
+
+Bjoern is a two-step simulation of particle trajectories in all-electrostatic
+electron-optical devices, e.g. electron sources or energy analysers used in
+surface science.
+
+In the first step, the electrostatic potential is calculated, based on a
+solution of the Poisson equation with known boundary conditions: the potential
+of electrodes, which are used as an input parameter, which is read from the
+file.
+
+The second step is the calculation of actual particle trajectories in the
+so-calculated electrostatic potential, neglecting space charge effects for the
+sake of simplicity. The trajectories have initial conditions that are randomly
+chosen from distributions of the starting coordinates and velocities.
